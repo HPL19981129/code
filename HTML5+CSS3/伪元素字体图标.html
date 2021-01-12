@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?s2o99u');
+            src: url('fonts/icomoon.eot?s2o99u#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?s2o99u') format('truetype'),
+                url('fonts/icomoon.woff?s2o99u') format('woff'),
+                url('fonts/icomoon.svg?s2o99u#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            border: 1px solid red;
+            /* text-align: center; */
+            /* line-height: 35px; */
+        }
+
+        div::after {
+            font-family: 'icomoon';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            content: '';
+            color: red;
+
+        }
+        p{
+            height: 100px;
+            width: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>你可真是个大聪明呀！</div>
+    <p>h</p>
+    <p></p>
+</body>
+
+</html>
